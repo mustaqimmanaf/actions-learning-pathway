@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
+      - name: Insert welcoming text
+        run: echo "Hello! and congrats, you have succesfully built and run your firsst GitHub action workflow file "
       - run: echo "$(cat hello_world.txt)"
       
